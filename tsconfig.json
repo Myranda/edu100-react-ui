@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "target": "es5",
+    "sourceMap": true,
+    "noUnusedParameters": false,
+    "noUnusedLocals": false,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "traceResolution": true,
+    "declarationDir": "@types",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
+    "lib": [
+      "es7",
+      "dom"
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "@impl/*": ["src/impl/*"],
+      "@inter/*": ["src/inter/*"]
+    }
+  },
+  "exclude": [
+    "test",
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
